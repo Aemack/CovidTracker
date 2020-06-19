@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Covid19</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/covid.css">
+  <link rel="stylesheet" href="css/normalize.css">  
+  <link rel="stylesheet" href="css/skeleton.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+</head>
+
+<body>
+    <header>
+      <div class="heading">        
+        <a class="logo" href="../index.html"><img class="logo" src="../img/logo.png"></a>
+        <a onclick="clear_page()" href="covid.html"><h1 id="covid" >Covid 19</h1></a>
+      </div>
+    <nav id="navigation">
+      <div id="mainMenu">          
+        <button onclick="world_clicked()" id="worldGraphButton">World Data</button>
+        <button onclick="search_by_country_clicked()">Country Data</button>
+      </div>
+      <div id="navbar"></div>
+      </nav>   
+    </header>
+    
+    <div id="main">
+
+    <div id="output"></div>
+
+  <div id="outputGraph"></div>
+      <div id="container">
+        <canvas id="myChart"></canvas>
+      </div>
+  </div>
+
+</div>
+
+  <footer class="footer">
+
+    <a href="mailto:adam_mcgrane@msn.com" class="footer__link">adam_mcgrane@msn.com</a>
+    
+    <ul class="social-list">
+        
+        <li class="social-list__item"><a href="https://github.com/Aemack" class="social-list__link"><i class="fab fa-github"></i></a></li>
+            
+        <li class="social-list__item"><a href="https://www.linkedin.com/in/adammcgrane/" class="social-list__link"><i class="fab fa-linkedin"></i></a></li>
+
+    </ul>
+</footer>
+
+  <script src="covid.js"></script>
+</body>
+
+</html>
